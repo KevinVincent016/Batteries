@@ -58,17 +58,17 @@ public class Menu {
 			break;
 	
 		case 3:
-			//System.out.println(company.showTotalBatteries());
+			System.out.println(company.showTotalBatteries());
 			//"(3) Para Mostrar el total de baterias tradicionales y recargables\n"+ 
 			break;
 
 		case 4:
-			//System.out.println("El costo promedio de vida util de las baterias recargables es: "+ company.calculateUsefulPromLifeCost());
+			System.out.println("El costo promedio de vida util de las baterias recargables es: "+ company.calculateUsefulPromLifeCost());
 		    // "(4) Para Calcular el promedio de costo de vida util de las baterias recargables\n"+ 
 			break;
 
 		case 5:
-			//System.out.println(company.showBatteriesInfo());
+			System.out.println(company.showBatteriesInfo());
 			// "(5) Para mostrar la informacion de todas las baterias\n" +
 			break;
 		
@@ -119,7 +119,7 @@ public class Menu {
         chargerNumber = sc.nextInt();
 
         char type;
-        System.out.println("¿cual es el tipo de bateria? Litio (l) o  Niquel-Cadio (n)");
+        System.out.println("ï¿½cual es el tipo de bateria? Litio (l) o  Niquel-Cadio (n)");
         type = sc.next().toCharArray()[0];
         
         company.registerRechargeableBattery(name, voltage, cost, capacity, chargerNumber, type);
