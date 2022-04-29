@@ -54,12 +54,12 @@ public class Company{
     public String showBatteriesInfo() {
     	String str = "";
         for(int i=0;i<MAX_BATTERIES && batteries[i]!=null;i++){
-            if(batteries[i] instanceof RechargeableBattery){
+            if(batteries[i]!=null && batteries[i] instanceof RechargeableBattery){
                 RechargeableBattery thebattery = (RechargeableBattery)batteries[i];
                 str += "\n Bateria recargable" +
                 "\nNombre: " + batteries[i].getName() +
                 "\nCosto de vida util: " + thebattery.calculateUsefulLife();
-            }else{
+            }else if(batteries[i]!=null){
                 str += "\n Bateria no recargable" + 
                 "\nNombre: " + batteries[i].getName() +
                 "\nCosto de vida util: 0";
